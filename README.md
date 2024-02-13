@@ -1,5 +1,5 @@
 # Virtual DOM
-1.  represent html using js obj, then build a DOM tree using that js obj and insert into the actual page
+1. represent html using js obj, then build a DOM tree using that js obj and insert into the actual page
 2. when status changed, generate a new js representation of DOM tree, and then compare to the old one, mark the difference
 3. apply the difference to the real DOM tree, so view got updated
 
