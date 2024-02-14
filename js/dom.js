@@ -1,13 +1,14 @@
-import el from "./element.ts"
+import el from "./element.js"
 var tree = new el('div', { 'id': 'container' }, [
   new el('h1', { style: 'color: blue' }, ['simple virtal dom']),
-  new el('p', null,['Hello, virtual-dom']),
-  new el('ul',null, [new el('li')]),
+  new el('p', ['Hello, virtual-dom']),
+  new el('ul',[new el('li')]),
   "div"
 ])
 console.log('----tree---', tree)
 var root = tree.render()
-document.body.appendChild(root)
+const app = document.getElementById('app')
+app?.appendChild(root)
 
 // console.log('----ul---', ul)
 // var ulRoot = ul.render()
